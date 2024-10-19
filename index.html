@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoMarket</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Modal del producto -->
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div id="modalDetails"></div>
+    </div>
+</div>
+
+<!-- Modal del carrito -->
+<div id="cartModal" class="modal">
+    <div class="modal-content">
+        <span class="close-cart-btn">&times;</span>
+        <div id="cartDetails"></div>
+    </div>
+</div>
+
+<header>
+    <h1>TecnoMarket</h1>
+    <div>
+        <input type="text" id="searchBar" placeholder="Buscar productos..." onkeyup="filterProducts()">
+        <button onclick="viewCart()">Ver Carrito (<span id="cart-count">0</span>)</button>
+    </div>
+</header>
+
+<div id="promoBanner" class="promo-banner">
+    <p>¡Compra ahora y obtén un 20% de descuento en tu primera compra!</p>
+    <button onclick="closePromoBanner()">Cerrar</button>
+</div>
+
+<div class="video-ad">
+    <video autoplay muted loop>
+        <source src="img/anuncio1.mp4" type="video/mp4">
+        Tu navegador no soporta el formato de video.
+    </video>
+</div>
+
+
+<div id="productCatalog"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ff7700;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cc0000' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23aa0000' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23d6002b' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23b10022' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23d9004b' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23b2003d' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23d3006c' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23ac0057' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23c4008c' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%239e0071' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23aa00aa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23880088' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="48" viewBox="0 0 24 24"><path fill="%23FFF" stroke="%23000" stroke-width="1.75" d="M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h6.87a.5.5 0 0 0 .35-.85L6.35 2.85a.5.5 0 0 0-.85.35Z"></path></svg>'), auto; /* Usa una ruta válida para el archivo del cursor */
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between; /* Espaciar el contenido a los lados */
+    align-items: center; /* Alinear verticalmente los elementos en el centro */
+    box-shadow: 0 4px 6px rgb(0, 0, 0); /* Sombra en el borde inferior */
+}
+
+header h1 {
+    font-size: 30px;
+    margin: 0;
+    text-shadow: 0px 0px 10px white;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header input {
+    padding: 10px;
+    width: 200px;
+    transition: width 0.4s ease-in-out;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-right: 20px; /* Espacio entre el input y el botón */
+}
+
+header button {
+    padding: 10px 15px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Efecto de transición para la barra de búsqueda */
+header input {
+    padding: 10px;
+    width: 300px;
+    transition: width 0.4s ease-in-out; /* Duración y tipo de animación */
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+/* Agrandar la barra de búsqueda al hacer hover o cuando esté enfocada */
+header input:hover, header input:focus {
+    width: 400px; /* Tamaño al que se expande */
+    border-color: #ff6f61; /* Cambio de color del borde */
+}
+
+header button {
+    padding: 10px 15px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+header button:hover {
+    background-color: #e55b50;
+    transform: scale(1.05); /* Hace que el botón crezca un poco */
+    transition: transform 0.3s ease-in-out;
+}
+
+.promo-banner {
+    background-image: linear-gradient(90deg, rgba(25, 136, 247, 1) 0%, rgba(247, 25, 136, 1) 100%);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    animation: slideIn 0.5s ease; /* Animación de entrada */
+    z-index: 999; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.promo-banner button {
+    background-color: white;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.promo-banner button:hover {
+    background-color: #ff5f5f;
+}
+
+.video-ad {
+    text-align: center; /* Centra el video */
+    margin: 5px 0; /* Espacio arriba y abajo */
+}
+
+.video-ad video {
+    max-width: 100%; /* Asegura que el video no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción del video */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+}
+
+
+
+#productCatalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.product {
+    background-color: white;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    border: 1px solid #ddd; /* Borde suave inicial */
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones para movimiento y sombra */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra inicial */
+}
+.product:hover {
+    transform: translateY(-10px); /* Levanta el cuadro hacia arriba */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    border-color: #ff6f61; /* Cambio de color del borde cuando se hace hover */
+}
+.product img {
+    width: 100%;
+    height: auto;
+}
+.modal {
+    display: none; /* Oculta el modal cuando la página carga */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.modal-content {
+    background-color: white;
+    max-height: 80vh; /* Establece un tamaño máximo en relación a la altura de la ventana */
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+/* Controla el tamaño de las imágenes dentro del modal */
+.modal-content img {
+    max-width: 100%; /* Asegura que la imagen nunca sea más ancha que el modal */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block;
+    margin: 0 auto; /* Centra la imagen dentro del modal */
+}
+
+
+.close-btn, .close-cart-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+.cart-item div {
+    display: flex;
+    flex-direction: column;
+}
+.cart-item button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.cart-item button:hover {
+    background-color: #e55b50;
+}
