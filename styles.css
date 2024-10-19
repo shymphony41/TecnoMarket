@@ -238,7 +238,7 @@ header button:hover {
     }
 
     #productCatalog {
-        display: grid;
+        display: center;
         grid-template-columns: 1fr; /* Coloca los productos uno debajo del otro */
         gap: 20px; /* Espaciado entre los productos */
     }
