@@ -244,12 +244,15 @@ header button:hover {
     }
 
     .product {
-        width: 90%; /* Ajusta el tamaño del producto en pantallas pequeñas */
+        width: 100%; /* Ajusta el tamaño del producto en pantallas pequeñas */
         margin: 0 auto; /* Centra los productos */
     }
 
-    .modal-content {
-        width: 90%; /* Asegúrate de que el modal ocupe casi toda la pantalla en móviles */
+    .modal {
+        width: 80% !important; /* Cambia el ancho del modal para pantallas pequeñas */
+        max-width: 80% !important;
+        padding: 15px;
+        top: 45%; /* Ajusta la posición vertical */
     }
 }
 
@@ -265,5 +268,11 @@ header button:hover {
     .product {
         width: 100%; /* Productos ocupan todo el ancho en pantallas muy pequeñas */
     }
-}
 
+    .modal {
+        width: 90% !important; /* Se expande casi al ancho completo en pantallas muy pequeñas */
+        max-width: 90% !important;
+        padding: 10px;
+        top: 40%; /* Ajusta más la posición para pantallas pequeñas */
+    }
+}
