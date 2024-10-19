@@ -223,7 +223,7 @@ header button:hover {
     }
 
     header h1 {
-        font-size: 24px; /* Ajusta el tamaño del título en pantallas pequeñas */
+        font-size: 3rem; /* Ajusta el tamaño del título en pantallas pequeñas */
         margin-bottom: 10px;
     }
 
@@ -258,7 +258,7 @@ header button:hover {
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 20px; /* Aún más pequeño para pantallas muy pequeñas */
+        font-size: 2.5rem; /* Aún más pequeño para pantallas muy pequeñas */
     }
 
     header input {
