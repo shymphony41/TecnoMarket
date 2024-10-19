@@ -212,3 +212,58 @@ header button:hover {
 .cart-item button:hover {
     background-color: #e55b50;
 }
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 24px; /* Ajusta el tamaño del título en pantallas pequeñas */
+        margin-bottom: 10px;
+    }
+
+    header div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    header input {
+        width: 80%; /* Asegúrate de que la barra de búsqueda ocupe el ancho disponible */
+    }
+
+    #productCatalog {
+        display: grid;
+        grid-template-columns: 1fr; /* Coloca los productos uno debajo del otro */
+        gap: 20px; /* Espaciado entre los productos */
+    }
+
+    .product {
+        width: 90%; /* Ajusta el tamaño del producto en pantallas pequeñas */
+        margin: 0 auto; /* Centra los productos */
+    }
+
+    .modal-content {
+        width: 90%; /* Asegúrate de que el modal ocupe casi toda la pantalla en móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px; /* Aún más pequeño para pantallas muy pequeñas */
+    }
+
+    header input {
+        width: 90%; /* Barra de búsqueda aún más ancha en móviles pequeños */
+    }
+
+    .product {
+        width: 100%; /* Productos ocupan todo el ancho en pantallas muy pequeñas */
+    }
+}
+
