@@ -24,28 +24,61 @@
     </div>
 </div>
 
-<header>
-    <h1>TecnoMarket</h1>
-    <div>
-        <input type="text" id="searchBar" placeholder="Buscar productos..." onkeyup="filterProducts()">
-        <button onclick="viewCart()">Ver Carrito (<span id="cart-count">0</span>)</button>
+<nav class="navbar">
+    <div class="navbar-container">
+        <div class="logo">TecnoMarket</div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Catalogo</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <li><a onclick="viewCart()">Ver Carrito (<span id="cart-count">0</span>)</a></li>
+        </ul>
     </div>
-</header>
+</nav>
+<div class="overlay"></div>
+
+<section id="home">
+    <div class="bg-effect bg-effect-1"></div>
+    <div class="section-content">
+        <h1 class="section-title">Welcome</h1>
+        <p class="section-description">Experimente el futuro de la tecnologia con nuestros productos</p>
+    </div>
+</section>
+
+<seccion id="about">
+    <div class="bg-effect bg-effect-2"></div>
+    <div class="section-content">
+        <h1 class="section-title2">Catalogo</h1>
+        <input type="text" id="searchBar" placeholder="Buscar productos..." onkeyup="filterProducts()">
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div id="modalDetails"></div>
+    </div>
+</div>
+    </div>
+</seccion>
 
 <div id="promoBanner" class="promo-banner">
     <p>¡Compra ahora y obtén un 20% de descuento en tu primera compra!</p>
     <button onclick="closePromoBanner()">Cerrar</button>
 </div>
 
-<div class="video-ad">
-    <video autoplay muted loop>
-        <source src="img/anuncio1.mp4" type="video/mp4">
-        Tu navegador no soporta el formato de video.
-    </video>
-</div>
-
 
 <div id="productCatalog"></div>
+
+<section id="contact">
+    <div class="bg-effect bg-effect-1"></div>
+    <div class="section-content">
+        <h1 class="section-title">Contacto</h1>
+        <p class="section-description">Let's create something amazing together</p>
+    </div>
+</section>
 
 <script src="script.js"></script>
 </body>
