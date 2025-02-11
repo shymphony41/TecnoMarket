@@ -1,10 +1,12 @@
 const products = [
-    { id: 1, name: 'OFF WHITE blanco negro', price: 100000, image: 'img/OFF WHITE blanco negro.jpg', description: 'Lleva tu estilo al siguiente nivel con las icónicas zapatillas OFF-WHITE en blanco y negro. Con su diseño audaz y los detalles distintivos de la marca, estas zapatillas combinan lo urbano con lo sofisticado. Fabricadas con materiales premium, ofrecen comodidad y durabilidad sin sacrificar el estilo.' },
+    { id: 1, name: 'DOTS 3 PRO', price: 45000, image: 'img/dots 3pro.png', description: 'Lleva tu estilo al siguiente nivel con las icónicas zapatillas OFF-WHITE en blanco y negro. Con su diseño audaz y los detalles distintivos de la marca, estas zapatillas combinan lo urbano con lo sofisticado. Fabricadas con materiales premium, ofrecen comodidad y durabilidad sin sacrificar el estilo.' },
     { id: 2, name: 'Nike Air Force One leyenda', price: 250000, image: 'img/nike-air-force-one.png', description: 'Descubre el estilo icónico y la comodidad sin igual de las Nike Air Force One Leyenda, un verdadero emblema en el mundo del calzado urbano. Desde su lanzamiento en 1982, estas zapatillas han sido un símbolo de la cultura sneaker y un favorito en las calles.' },
     { id: 3, name: 'OFF WHITE out of office classic black', price: 800000, image: 'img/OFF WHITE out of office classic black.jpg', description: 'Adéntrate en el mundo del lujo urbano con las OFF WHITE Out of Office Classic Black. Estas zapatillas son más que un simple accesorio; son una declaración de moda que refleja la estética contemporánea y el espíritu vanguardista de la marca.' },
     { id: 4, name: 'Nike TN Air max plus white', price: 250000, image: 'img/nike tn.png', description: 'Presentamos las icónicas Nike TN Air Max Plus en un elegante color blanco, diseñadas para quienes buscan destacar con cada paso. Con su silueta distintiva y tecnología de amortiguación, estas zapatillas no solo ofrecen un estilo moderno, sino también un confort excepcional.' },
     { id: 5, name: 'JORDAN air 3 retro', price: 150000, image: 'img/JORDAN air 3 retro.jpg', description: 'Redescubre el estilo y la comodidad con las JORDAN Air 3 Retro, un ícono del calzado que combina a la perfección el legado del baloncesto con un diseño contemporáneo. Estas zapatillas destacan por su elegante silueta y su innovadora tecnología, garantizando un rendimiento excepcional tanto en la cancha como en la vida diaria.' },
+    { id: 6, name: 'JORDAN air 3 retro', price: 150000, image: 'img/JORDAN air 3 retro.jpg', description: 'Redescubre el estilo y la comodidad con las JORDAN Air 3 Retro, un ícono del calzado que combina a la perfección el legado del baloncesto con un diseño contemporáneo. Estas zapatillas destacan por su elegante silueta y su innovadora tecnología, garantizando un rendimiento excepcional tanto en la cancha como en la vida diaria.' },
 ];
+
 
 const navbar = document.querySelector('.navbar');
 const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
@@ -206,4 +208,3 @@ document.querySelector('.close-cart-btn').addEventListener('click', closeCartMod
 
 // Cargar los productos al cargar la página
 window.onload = loadProducts;
-
