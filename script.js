@@ -1,8 +1,8 @@
 const products = [
-    { id: 1, name: 'DOTS 3 PRO', price: 45000, image: 'img/dots 3pro.png', description: 'Lleva tu estilo al siguiente nivel con las icónicas zapatillas OFF-WHITE en blanco y negro. Con su diseño audaz y los detalles distintivos de la marca, estas zapatillas combinan lo urbano con lo sofisticado. Fabricadas con materiales premium, ofrecen comodidad y durabilidad sin sacrificar el estilo.' },
-    { id: 2, name: 'BUDS 3', price: 55000, image: 'img/buds 3.png', description: 'Multifuncionalidad -Cancelación de Ruido passiva en tus llamadas - Modo Ambiente para que escuches todo lo que ocurre a tu alrededor y puedas interactuar con tu entorno.'},
-    { id: 3, name: 'BUDS 3 LITE', price: 50000, image: 'img/buds 3 lite.png', description: 'Multifuncionalidad -Cancelación de Ruido passiva en tus llamadas -Modo Ambiente para que escuches todo lo que ocurre a tu alrededor y puedas interactuar con tu entorno.'},
-    { id: 4, name: 'Audifonos M32', price: 45000, image: 'img/audifonos m32.png', description: 'Audífonos Inalámbricos M32 Con Power Bank. Compatibles para IOS & Android. Son geniales para salir de viaje ya que la bateria puede durar 5 Horas enteros en la cabina'},
+    { id: 1, name: 'DOTS 3 PRO', price: 42000, image: 'img/dots 3pro.png', description: 'Lleva tu estilo al siguiente nivel con las icónicas zapatillas OFF-WHITE en blanco y negro. Con su diseño audaz y los detalles distintivos de la marca, estas zapatillas combinan lo urbano con lo sofisticado. Fabricadas con materiales premium, ofrecen comodidad y durabilidad sin sacrificar el estilo.' },
+    { id: 2, name: 'BUDS 3', price: 68000, image: 'img/buds 3.png', description: 'Multifuncionalidad -Cancelación de Ruido passiva en tus llamadas - Modo Ambiente para que escuches todo lo que ocurre a tu alrededor y puedas interactuar con tu entorno.'},
+    { id: 3, name: 'BUDS 3 LITE', price: 68000, image: 'img/buds 3 lite.png', description: 'Multifuncionalidad -Cancelación de Ruido passiva en tus llamadas -Modo Ambiente para que escuches todo lo que ocurre a tu alrededor y puedas interactuar con tu entorno.'},
+    { id: 4, name: 'Audifonos M32', price: 58000, image: 'img/audifonos m32.png', description: 'Audífonos Inalámbricos M32 Con Power Bank. Compatibles para IOS & Android. Son geniales para salir de viaje ya que la bateria puede durar 5 Horas enteros en la cabina'},
     { id: 5, name: 'Audifonos P9', price: 60000, image: 'img/audifonos P9.png', description: 'Redescubre el estilo y la comodidad con las JORDAN Air 3 Retro, un ícono del calzado que combina a la perfección el legado del baloncesto con un diseño contemporáneo. Estas zapatillas destacan por su elegante silueta y su innovadora tecnología, garantizando un rendimiento excepcional tanto en la cancha como en la vida diaria.' },
     { id: 6, name: 'Audifonos BT-12', price: 80000, image: 'img/audifonos BT-12.png', description: 'Redescubre el estilo y la comodidad con las JORDAN Air 3 Retro, un ícono del calzado que combina a la perfección el legado del baloncesto con un diseño contemporáneo. Estas zapatillas destacan por su elegante silueta y su innovadora tecnología, garantizando un rendimiento excepcional tanto en la cancha como en la vida diaria.' },
     { id: 7, name: 'Audifonos Q10', price: 40000, image: 'img/audifonos Q10.png', description: 'Redescubre el estilo y la comodidad con las JORDAN Air 3 Retro, un ícono del calzado que combina a la perfección el legado del baloncesto con un diseño contemporáneo. Estas zapatillas destacan por su elegante silueta y su innovadora tecnología, garantizando un rendimiento excepcional tanto en la cancha como en la vida diaria.' },
@@ -78,7 +78,7 @@ function loadProducts() {
             <h2>${product.name}</h2>
             <p>Precio: $${product.price}</p>
             <button onclick="openProductModal(${product.id})">Ver más detalles</button>
-        `;
+        `
 
         catalog.appendChild(productDiv);
     });
@@ -101,10 +101,10 @@ function filterProducts() {
         productDiv.classList.add('product');
 
         productDiv.innerHTML = `
-            <img src="${product.image}" alt="${product.name}">
-            <h2>${product.name}</h2>
-            <p>Precio: $${product.price}</p>
-            <button onclick="openProductModal(${product.id})">Ver más detalles</button>
+        <img src="${product.image}" alt="${product.name}">
+        <h2>${product.name}</h2>
+        <p>Precio: $${product.price}</p>
+        <button onclick="openProductModa(${product.id})">Ver más detalles</button>
         `;
 
         catalog.appendChild(productDiv);
