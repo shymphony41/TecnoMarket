@@ -467,25 +467,58 @@ input:hover, header input:focus {
     padding: 20px;
 }
 .product {
-    background-color: white;
+    background: linear-gradient(to top right, #FFE3B2, #ff6232);
     margin: 10px;
-    width: 250px;
+    width: 250px; 
     text-align: center;
-    border: 1px solid #ddd; /* Borde suave inicial */
+    border: 5px solid #ddd; /* Borde suave inicial */
     border-radius: 10px;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones para movimiento y sombra */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra inicial */
+    box-shadow: 0px 0px 30px 1px rgba(255, 187, 0, 0.3);
 }
 .product:hover {
     transform: translateY(-10px); /* Levanta el cuadro hacia arriba */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
-    border-color: #ff6f61; /* Cambio de color del borde cuando se hace hover */
+    box-shadow: 0px 0px 30px 1px rgba(255, 187, 0, 0.719);
+    border-color: #ffad61; /* Cambio de color del borde cuando se hace hover */
 }
 .product img {
     width: 100%;
     height: auto;
 }
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff5252;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Cambiar el color al pasar el mouse */
+button:hover {
+    background-color: #fff;
+    color: #ff5252;
+    border: 2px solid #ff5252;
+    box-shadow: 5px 5px 0px #ff5252;
+}
+
+/* Agregar sombra al hacer clic */
+button:active {
+    background-color: #fcf414;
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+
 .modal {
     display: none; /* Oculta el modal cuando la página carga */
     position: fixed;
@@ -521,11 +554,11 @@ input:hover, header input:focus {
 
 
 .close-btn, .close-cart-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    position: fixed;
+    top: 1px; /* 50px desde la parte superior del contenedor padre */
+    right: 10px; /* 30px desde la derecha */
     cursor: pointer;
-    font-size: 20px;
+    font-size: 30px;
 }
 .cart-item {
     display: flex;
